@@ -1,0 +1,26 @@
+# Draft. Fill in the participant, public URLs, hardware tested, and measured responses after execution.
+project_name: Offline Crop Triage
+slug: offline-crop-triage
+event: qwen-local-hackathon-2026
+members:
+- name: ''
+  github: ''
+one_liner: Offline leaf-photo triage with crop recognition, visible symptoms and a possible diagnosis.
+base_model: Qwen/Qwen3-VL-2B-Instruct
+training_tool: ms-swift
+training_platform: colab
+method: qlora
+dataset:
+  description: CC BY 4.0 PlantVillageVQA sample with 4000 train, 300 dev and 350 test QA pairs on disjoint image IDs.
+  size: 4000
+  link: https://huggingface.co/datasets/SyedNazmusSakib/PlantVillageVQA
+model_link: ''
+quantization: Q4_K_M language GGUF and official F16 vision projector
+runtime: llama.cpp
+hardware_tested: ''
+demo_video: ''
+repo_link: ''
+before_after:
+  prompt: ''
+  base_output: ''
+  finetuned_output: ''
